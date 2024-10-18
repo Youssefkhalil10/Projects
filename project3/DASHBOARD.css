@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+
+.image{
+    width: 50px;
+    height: 50px;
+     border-radius: 50%;
+     overflow: hidden;
+     border: 3px solid white;
+     flex-shrink: 0;
+}
+.image img{
+    width: 100%;
+    
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile h2{
+    font-size: 25px;
+}
+.menu{
+    background-color: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu:hover{
+    width: 260px;
+}
+ul  {
+    list-style: none;
+    /*العناصر اللي جواها هتتحرك في المدي بتاعها بس */
+    position: relative;
+    /*اديته طول عشان اقدر انزل اخر واحد تحت خالص*/
+    height: 95%;
+}
+ul li a{
+    /*اللينك عنصر على سطر واحد ف لازم يتعدل الاول*/
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+}
+ul li a:hover, .active{
+    background-color: #ffffff8a;
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background-color: #ff0000d4;
+}
+ul li a i{
+    font-size: 30px;
+}
+.content{
+    width: 100%;
+}
+.title-info{
+    background-color: #0099ffdf;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.data-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box{
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.data-info .box:hover,td:hover{
+    background-color: #8d9fb0d4;
+    cursor: pointer;
+}
+.data-info .box i{
+    font-size: 30px;
+}
+.data-info .box .data{
+    font-size: 25px;
+    text-align: center;
+}
+.data-info .box span{
+    font-size: 25px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+    border-radius: 10px;
+}
+td{
+    background-color: #123;
+    border-radius: 8px;
+    padding: 10px;
+}
+th{
+    background-color: hwb(210 0% 0%);
+    padding: 10px;
+    border-radius: 8px;
+}
+tbody td .price{
+    background-color: green;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+tbody td .count{
+    background-color: gold;
+    color: black;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
